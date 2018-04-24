@@ -2,9 +2,9 @@
 :chapterId: chapter-06
 :sourceDir: ./examples
 :sourceSample: TODO.js
-:nodeCurrentVersion: v8
-:nodeNextVersion: v9
-:npmCurrentVersion: v5
+:nodeCurrentVersion: v10
+:nodeNextVersion: v11
+:npmCurrentVersion: v6
 :sectnums:
 :revdate: {docdate}
 :imagesdir: {indir}

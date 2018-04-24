@@ -3,7 +3,6 @@ sudo: false
 
 language: node_js
 node_js:
-  - v8
   - v10
 
 cache:
@@ -13,9 +12,9 @@ cache:
 env:
 - DEBUG=tape-spawn SHARP_IGNORE_GLOBAL_LIBVIPS=1
 
-matrix:
-  allow_failures:
-    - node_js: v10
+# matrix:
+#   allow_failures:
+#     - node_js: v11
 
 before_install:
 - npm i -g npm@latest
@@ -39,7 +38,7 @@ deploy:
     local-dir: dist
     on:
       branch: master
-      node_js: v8
+      node_js: v10
   - provider: releases
     prerelease: true
     skip-cleanup: true
